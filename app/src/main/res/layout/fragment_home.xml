@@ -44,7 +44,7 @@
             android:src="@drawable/ic_homei1" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/signuptext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView" />
