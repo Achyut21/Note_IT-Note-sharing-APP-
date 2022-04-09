@@ -36,6 +36,7 @@
         </RelativeLayout>
 
         <ImageView
+            android:id="@+id/homei1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@android:dimen/notification_large_icon_height"
@@ -46,8 +47,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            android:layout_marginTop=""/>
+            android:text="TextView" />
 
 
     </RelativeLayout>
