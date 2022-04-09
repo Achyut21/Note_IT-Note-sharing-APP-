@@ -5,12 +5,12 @@
         android:id="@+id/home"
         android:title="@string/home"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_home"/>
+        android:icon="@drawable/bottom_nav_home"/>
     <item
         android:id="@+id/like"
         android:title="@string/liked"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/heart_broken"/>
+        android:icon="@drawable/bottom_nav_heart"/>
     <item
         android:title=""
         app:showAsAction="ifRoom"
@@ -19,11 +19,11 @@
         android:id="@+id/badge"
         android:title="@string/badges"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_badge"/>
+        android:icon="@drawable/bottom_nav_badge"/>
     <item
         android:id="@+id/Profile"
         android:title="@string/profile"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/ic_baseline_face"/>
+        android:icon="@drawable/bottom_nav_profile"/>
 
 </menu>
