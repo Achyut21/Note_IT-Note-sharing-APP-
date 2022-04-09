@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
-        android:src="@drawable/ic_baseline_add"
+        android:src="@drawable/bottom_nav_upload"
         app:layout_anchor="@id/bottomNavigationBar"
         app:maxImageSize="50dp" />
 
