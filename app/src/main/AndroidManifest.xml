@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".loginpage"
+            android:exported="false" />
+        <activity
+            android:name=".signuppage"
+            android:exported="false" />
+        <activity
+            android:name=".ws1"
+            android:exported="false" />
+        <activity
+            android:name=".splashscreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="false" />
         <activity
