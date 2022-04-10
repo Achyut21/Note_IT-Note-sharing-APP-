@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "835369466618",
+    "project_id": "bitsappathon-880e0",
+    "storage_bucket": "bitsappathon-880e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835369466618:android:4e877147ae472262836743",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835369466618-re9sn36kl5hkbnsb9eptoa39f1l85iuu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9dRJTuHRdp0oHDFhGmrQRHiSz6-UPZ6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835369466618-re9sn36kl5hkbnsb9eptoa39f1l85iuu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

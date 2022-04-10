@@ -17,12 +17,22 @@
             android:name=".badgesplash"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true"
-            tools:ignore="DuplicateActivity">
+            android:name=".signuppage"
+            android:exported="false" />
+        <activity
+            android:name=".loginpage"
+            android:exported="false" />
+        <activity
+            android:name=".ws1"
+            android:exported="false" />
+
+        <activity
+            android:name=".splashscreen"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
