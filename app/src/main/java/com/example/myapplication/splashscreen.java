@@ -29,7 +29,7 @@ public class splashscreen extends AppCompatActivity {
 
         imageView = findViewById(R.id.templogo);
 
-        logo = findViewById(R.id.temptext);
+
 
         imageView.setAnimation(topAnim);
 
