@@ -27,7 +27,8 @@
                 android:src="@drawable/ic_liketile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="centerCrop"/>
 
             <TextView
                 android:id="@+id/textView4"

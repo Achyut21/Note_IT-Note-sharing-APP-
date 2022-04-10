@@ -22,11 +22,7 @@ ImageButton button,button2;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_home, container, false);
-        ImageButton button;
         button=view.findViewById(R.id.imageView8);
-        // Inflate the layout for this fragment
-
-        View view= inflater.inflate(R.layout.fragment_home, container, false);
         button2=view.findViewById(R.id.logoutBtn);
         mAuth=FirebaseAuth.getInstance();
         button2.setOnClickListener(new View.OnClickListener() {
