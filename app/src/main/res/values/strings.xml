@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">NoteIt</string>
     <string name="home">home</string>
-    <string name="liked"> </string>
-    <string name="badges"> </string>
-    <string name="profile"> profile</string>
+    <string name="liked">like</string>
+    <string name="badges">badges</string>
+    <string name="profile">profile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
