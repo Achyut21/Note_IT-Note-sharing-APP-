@@ -5,25 +5,36 @@
         android:id="@+id/home"
         android:title="@string/home"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/bottom_nav_home"/>
+        android:icon="@drawable/bottom_nav_home"
+        app:cnb_iconColor="@color/white"
+        app:cnb_backgroundColor="@color/black"/>
     <item
         android:id="@+id/like"
         android:title="@string/liked"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/bottom_nav_heart"/>
+        android:icon="@drawable/bottom_nav_heart"
+        app:cnb_iconColor="@color/white"
+        app:cnb_backgroundColor="@color/black"/>
     <item
         android:title=""
         app:showAsAction="ifRoom"
-        android:enabled="false" />
+        android:enabled="false"
+        app:cnb_iconColor="@color/white"
+        app:cnb_backgroundColor="@color/black"/>
+
     <item
         android:id="@+id/badge"
         android:title="@string/badges"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/bottom_nav_badge"/>
+        android:icon="@drawable/bottom_nav_badge"
+        app:cnb_iconColor="@color/white"
+        app:cnb_backgroundColor="@color/black"/>
     <item
         android:id="@+id/Profile"
         android:title="@string/profile"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/bottom_nav_profile"/>
+        android:icon="@drawable/bottom_nav_profile"
+        app:cnb_iconColor="@color/white"
+        app:cnb_backgroundColor="@color/black"/>
 
 </menu>
