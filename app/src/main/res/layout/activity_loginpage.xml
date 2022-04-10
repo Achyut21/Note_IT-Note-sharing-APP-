@@ -10,24 +10,35 @@
         android:id="@+id/loginstat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.004"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/loginstat" />
 
-    <EditText
-        android:id="@+id/enteremail2"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/EmailextView2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="40dp"
-        android:ems="10"
-        android:hint="Enter Email"
-        android:inputType="textEmailAddress"
+        android:layout_marginEnd="32dp"
+        android:hint="Phone number/Email"
+        app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginstat" />
+        app:layout_constraintTop_toBottomOf="@+id/loginstat">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/semail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLength="21" />
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <ImageView
         android:id="@+id/loginbtn"
@@ -37,20 +48,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/applebtn2"
-        app:srcCompat="@drawable/loginbtn" />
-
-    <EditText
-        android:id="@+id/enterpassword2"
-        android:layout_width="wrap_content"
+        app:srcCompat="@drawable/loginbtn"
+        android:onClick="Login"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PasswordtTextView2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enteremail2" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Password"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="@+id/EmailextView2"
+        app:layout_constraintStart_toStartOf="@+id/EmailextView2"
+        app:layout_constraintTop_toBottomOf="@+id/EmailextView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/lpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="21" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <ImageView
         android:id="@+id/applebtn2"
@@ -59,7 +81,7 @@
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterpassword2"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordtTextView2"
         app:srcCompat="@drawable/applebtn" />
 
     <ImageView
@@ -90,7 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:onClick="signupredi"
+        android:onClick="ToSignUpScreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -107,7 +129,7 @@
         android:layout_marginTop="13dp"
         app:layout_constraintBottom_toTopOf="@+id/googlebtn2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterpassword2"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordtTextView2"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -119,16 +141,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/rememberswitch"
-        app:layout_constraintTop_toBottomOf="@+id/enterpassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/PasswordtTextView2" />
 
     <TextView
         android:id="@+id/forgotpassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="272dp"
+        android:layout_marginTop="16dp"
         android:text="Forgot Password?"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.801"
-        app:layout_constraintStart_toEndOf="@+id/textView" />
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/PasswordtTextView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
