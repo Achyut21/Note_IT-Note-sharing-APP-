@@ -29,6 +29,7 @@ public class splashscreen extends AppCompatActivity {
 
         imageView = findViewById(R.id.templogo);
 
+
         imageView.setAnimation(topAnim);
          mAuth = FirebaseAuth.getInstance();
 
