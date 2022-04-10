@@ -4,26 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/coordinator"
     tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottomNavigationBar"
+        android:id="@+id/bottom_app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:backgroundTint="@color/blue"
-        app:fabCradleMargin="10dp"
-        app:fabCradleRoundedCornerRadius="50dp">
+        app:fabCradleMargin="5dp"
+        app:fabCradleVerticalOffset="10dp"
+        app:fabCradleRoundedCornerRadius="50dp"
+        app:fabAlignmentMode="center">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNavigationView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
-            android:background="@color/transparent"
-            app:itemIconTint="@color/bottom_nav_color"
-            app:itemTextColor="@color/bottom_nav_color"
-            app:menu="@menu/bottom_menu" />
+
+
     </com.google.android.material.bottomappbar.BottomAppBar>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -32,8 +33,22 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
         android:src="@drawable/bottom_nav_upload"
-        app:layout_anchor="@id/bottomNavigationBar"
-        app:maxImageSize="50dp" />
+        app:layout_anchor="@id/bottom_app_bar"
+        app:maxImageSize="30dp"
+        android:contentDescription=".Upload" />
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chip_app_bar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:paddingBottom="8dp"
+        app:cnb_iconSize="20dp"
+        app:cnb_menuResource="@menu/bottom_menu"
+        app:cnb_radius="20dp"
+        app:cnb_unselectedColor="@color/white"
+        app:layout_anchor="@+id/bottom_app_bar"
+        app:layout_anchorGravity="center" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
