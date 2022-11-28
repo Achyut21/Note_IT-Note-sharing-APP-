@@ -35,7 +35,8 @@
         android:src="@drawable/bottom_nav_upload"
         app:layout_anchor="@id/bottom_app_bar"
         app:maxImageSize="30dp"
-        android:contentDescription=".Upload" />
+        android:contentDescription=".Upload"
+        android:onClick="toUpload"/>
 
     <com.ismaeldivita.chipnavigation.ChipNavigationBar
         android:id="@+id/chip_app_bar"

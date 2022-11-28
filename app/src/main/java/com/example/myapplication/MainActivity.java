@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
@@ -9,17 +10,25 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.google.android.material.bottomappbar.BottomAppBar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 public class MainActivity extends AppCompatActivity {
    ChipNavigationBar chipNavigationBar;
     View constraint;
+    //////////////////////////////////
+
     private FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +42,14 @@ public class MainActivity extends AppCompatActivity {
 
         bottom_menu();
         mAuth = FirebaseAuth.getInstance();
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
     }
+
+
 
     private void bottom_menu() {
         chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
@@ -67,4 +83,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void toUpload(View view) {
+        startActivity(new Intent(MainActivity.this,toUpload.class));
+    }
 }
