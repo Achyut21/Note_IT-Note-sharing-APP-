@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".toUpload"
+    tools:visibility="visible">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="290dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:background="@drawable/selectfilebtn"
+        android:fontFamily="@font/poppins_semibold"
+        android:hint="Select files"
+        android:drawableStart="@drawable/carbon_add"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:textColor="#646464"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="179dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/uploaddownloadbtn"
+        android:text="Upload"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <Button
+        android:id="@+id/BtnRead"
+        android:layout_width="179dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/uploaddownloadbtn"
+        android:onClick="retrievePDF"
+        android:text="download"
+        app:layout_constraintEnd_toEndOf="@+id/btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btn"
+        app:layout_constraintTop_toBottomOf="@+id/btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
