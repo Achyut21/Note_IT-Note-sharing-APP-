@@ -1,5 +1,5 @@
 # Note IT
-**Members**: Achyut Katiyar, Aditya Challa, Kaushik Aadhithya Chiratanagandla, Nikhila Koneru and Seela Satya Sai Lokesh(Designer)<br />
+**Members**: Achyut Katiyar, Aditya Challa, Kaushik Aadhithya Chiratanagandla, Jayesh Jetty and Seela Satya Sai Lokesh(Designer)<br />
 This app can be used for sharing or viewing notes for various subjects when ever the user pleases.<br />
 **Design:**<br />
     The design of the app was made on figma by Seela Satya Sai Lokesh.<br />
